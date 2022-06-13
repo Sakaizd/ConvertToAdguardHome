@@ -52,8 +52,8 @@ proxies:
  into
 
 ```
-[/server.cn/]https://223.5.5.5/dns-query
-[/server.hk/]https://223.5.5.5/dns-query
+[/server.cn/]https://dns.cloudflare.com/dns-query
+[/server.hk/]https://dns.cloudflare.com/dns-query
 ```
 # usage
 ```
