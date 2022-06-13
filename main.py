@@ -19,7 +19,7 @@ def main(args):
 
     inputFile = args.inputFile
     outputFile = args.outputFile
-    DNS = args.dns
+    DNS = args.DNS
     with open(inputFile, encoding='utf-8') as f:
 
         data = yaml.load(f, Loader=yaml.FullLoader)
@@ -29,7 +29,7 @@ def main(args):
         servers = []
         serverList = open(outputFile, "w")
 
-        for i in range(1, len(list(data.items())[0][1])):
+        for i in range(0, len(list(data.items())[0][1])):
             for item in data.items():
 
                 url = item[1][i]['server']
