@@ -54,6 +54,6 @@ if __name__ == '__main__':
     parser.add_argument('-o', '--outputFile', type=str,
                         default='serverlist.txt')
     parser.add_argument('-d', '--DNS', type=str,
-                        default="https://223.5.5.5/dns-query")
+                        default="https://dns.cloudflare.com/dns-query")
     args = parser.parse_args()
     main(args)
