@@ -1,8 +1,9 @@
 # ConvertToAdguardHome
 
-## Use this program to convert the proxies server into a list for AdGuardHome specify upstreams:     
+ Use this program to convert the proxies server into a list for AdGuardHome specify upstreams:     
 
-## change this:
+## Results
+ change this:
 ```
 proxies:
   # Shadowsocks
@@ -48,9 +49,18 @@ proxies:
       # headers:
       #   custom: value
 ```
-## into
+ into
 
 ```
 [/server.cn/]https://223.5.5.5/dns-query
 [/server.hk/]https://223.5.5.5/dns-query
 ```
+# usage
+```
+ ./main.py -i test.yaml -o serverlist.txt -DNS https://223.6.6.6/dns-query
+ 
+options:
+  -h, --help            show this help message and exit
+  -i INPUTFILE, --inputFile INPUTFILE
+  -o OUTPUTFILE, --outputFile OUTPUTFILE
+  -d DNS, --DNS DNS```
