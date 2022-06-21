@@ -52,8 +52,10 @@ proxies:
  into
 
 ```
-[/server.cn/]https://dns.cloudflare.com/dns-query
+[/server.com/]https://dns.cloudflare.com/dns-query
 [/server.hk/]https://dns.cloudflare.com/dns-query
+[/server.cn/]https://dns.cloudflare.com/dns-query
+
 ```
 or list only:
 ```

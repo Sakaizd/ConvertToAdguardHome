@@ -1,3 +1,3 @@
- - DOMAIN-SUFFIX,server.cn,DIRECT
- - DOMAIN-SUFFIX,server.com,DIRECT
- - DOMAIN-SUFFIX,server.hk,DIRECT
+[/server.com/]https://dns.cloudflare.com/dns-query
+[/server.hk/]https://dns.cloudflare.com/dns-query
+[/server.cn/]https://dns.cloudflare.com/dns-query
