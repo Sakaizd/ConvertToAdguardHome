@@ -1,0 +1,5 @@
+.vscode/*
+
+*.yaml
+*.txt
+serverlist.txt
