@@ -69,7 +69,7 @@ or clash rule:
 ```
 # usage
 ```
-pip install requirements.txt
+pip install -r requirements.txt
 python ./main.py -i test.yaml -o serverlist.txt -d https://dns.cloudflare.com/dns-query
 ```
 
