@@ -37,14 +37,21 @@ def main(args):
                 if isIP(url):
                     break
 
-                print(url + " tld is " + get_fld(url, fix_protocol=True))
+                if args.verbose:
+                    print(url + " tld is " + get_fld(url, fix_protocol=True))
+
                 servers.append(get_fld(url, fix_protocol=True))
 
         new_list = list(set(servers))
 
         for i in range(0, len(new_list)):
-            
-            serverList.writelines("[/" + new_list[i] + "/]"+DNS+"\n")
+            if args.list:
+                serverList.writelines(new_list[i]+"\n")
+            elif args.clashRule:
+                serverList.writelines(
+                    " - DOMAIN-SUFFIX," + new_list[i] + ",DIRECT" + "\n")
+            else:
+                serverList.writelines("[/" + new_list[i] + "/]"+DNS+"\n")
 
 
 if __name__ == '__main__':
@@ -52,8 +59,16 @@ if __name__ == '__main__':
         description='将 clash proxy provider 的域名转换为用于 AdGuardHome 指定为特定域名的上游服务器列表')
     parser.add_argument('-i', '--inputFile', type=str)
     parser.add_argument('-o', '--outputFile', type=str,
-                        default='serverlist.txt')
+                        default='serverlist.txt', help="default='serverlist.txt'")
     parser.add_argument('-d', '--DNS', type=str,
-                        default="https://dns.cloudflare.com/dns-query")
+                        default='https://dns.cloudflare.com/dns-query',
+                        help="specify DNS server, default='https://dns.cloudflare.com/dns-query'"
+                        )
+    parser.add_argument("--list", help="server list only",
+                        action="store_true")
+    parser.add_argument("--clashRule", help="convert to clash rule",
+                        action="store_true")
+    parser.add_argument("--verbose", help="verbose",
+                        action="store_true")
     args = parser.parse_args()
     main(args)

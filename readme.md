@@ -3,7 +3,7 @@
  Use this program to convert the proxies server into a list for AdGuardHome specify upstreams:     
 
 ## Results
- change this:
+it converts this:
 ```
 proxies:
   # Shadowsocks
@@ -55,12 +55,34 @@ proxies:
 [/server.cn/]https://dns.cloudflare.com/dns-query
 [/server.hk/]https://dns.cloudflare.com/dns-query
 ```
+or list only:
+```
+server.com
+server.hk
+server.cn
+```
+or clash rule:
+```
+ - DOMAIN-SUFFIX,server.cn,DIRECT
+ - DOMAIN-SUFFIX,server.com,DIRECT
+ - DOMAIN-SUFFIX,server.hk,DIRECT
+```
 # usage
 ```
- ./main.py -i test.yaml -o serverlist.txt -DNS https://223.6.6.6/dns-query
- 
+pip install requirements.txt
+python ./main.py -i test.yaml -o serverlist.txt -d https://dns.cloudflare.com/dns-query
+```
+
+
+```
 options:
   -h, --help            show this help message and exit
   -i INPUTFILE, --inputFile INPUTFILE
   -o OUTPUTFILE, --outputFile OUTPUTFILE
-  -d DNS, --DNS DNS```
+                        default='serverlist.txt'
+  -d DNS, --DNS DNS     specify DNS server, default='https://dns.cloudflare.com/dns-query'
+  --list                server list only
+  --clashRule           convert to clash rule
+  --verbose             verbose
+  
+  ```

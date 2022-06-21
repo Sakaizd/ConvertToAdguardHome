@@ -1,0 +1,3 @@
+ - DOMAIN-SUFFIX,server.cn,DIRECT
+ - DOMAIN-SUFFIX,server.com,DIRECT
+ - DOMAIN-SUFFIX,server.hk,DIRECT
