@@ -78,8 +78,7 @@ python ./main.py -i test.yaml -o serverlist.txt -d https://dns.cloudflare.com/dn
 options:
   -h, --help            show this help message and exit
   -i INPUTFILE, --inputFile INPUTFILE
-  -o OUTPUTFILE, --outputFile OUTPUTFILE
-                        default='serverlist.txt'
+  -o OUTPUTFILE, --outputFile OUTPUTFILE，default='serverlist.txt'
   -d DNS, --DNS DNS     specify DNS server, default='https://dns.cloudflare.com/dns-query'
   --list                server list only
   --clashRule           convert to clash rule
