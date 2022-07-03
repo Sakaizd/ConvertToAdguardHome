@@ -1,3 +1,5 @@
-[/server.com/]https://dns.cloudflare.com/dns-query
-[/server.hk/]https://dns.cloudflare.com/dns-query
-[/server.cn/]https://dns.cloudflare.com/dns-query
+ - checkmails.xyz
+ - 211129.xyz
+ - iqyun.zone
+ - uuuglass.co
+ - iqdnsio.co
