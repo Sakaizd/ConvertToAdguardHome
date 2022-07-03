@@ -3,7 +3,7 @@
  Use this program to convert the proxies server into a list for AdGuardHome specify upstreams:     
 
 ## Results
-it converts this:
+Input the clash proxy objects:
 ```
 proxies:
   # Shadowsocks
@@ -49,7 +49,7 @@ proxies:
       # headers:
       #   custom: value
 ```
- into
+ output AdGuardHome server list:
 
 ```
 [/server.com/]https://dns.cloudflare.com/dns-query
@@ -57,13 +57,13 @@ proxies:
 [/server.cn/]https://dns.cloudflare.com/dns-query
 
 ```
-or list only:
+or output list only:
 ```
 server.com
 server.hk
 server.cn
 ```
-or clash rule:
+or output clash rule:
 ```
  - DOMAIN-SUFFIX,server.cn,DIRECT
  - DOMAIN-SUFFIX,server.com,DIRECT
