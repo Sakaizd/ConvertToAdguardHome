@@ -1,83 +1,43 @@
 proxies:
-  - {name: "🇭🇰 [香港企业宽带]华南入口 Trojan 流媒体", server: hk-port.iqdnsio.co, port: 62626, type: trojan, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, sni: hk-wtt.uuuglass.co, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港企业宽带2]福建BGP入口 Trojan 流媒体", server: xm-bgp.iqyun.zone, port: 10125, type: trojan, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, sni: hk-wtt.uuuglass.co, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港企业宽带3]海南BGP入口 Trojan 流媒体", server: hn-hk.iqyun.zone, port: 22229, type: trojan, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, sni: hk-wtt.uuuglass.co, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港企业宽带4]广东BGP入口 Trojan 流媒体", server: fs-hk.iqyun.zone, port: 29999, type: trojan, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, sni: hk-wtt.uuuglass.co, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港MS1]广港AGA加速 流媒体支持", server: hk-ms1.checkmails.xyz, port: 31111, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港MS3]福建BGP入口 流媒体支持", server: xm-bgp.iqyun.zone, port: 22222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港MS4]海南BGP入口 流媒体支持", server: hn-hk.iqyun.zone, port: 29999, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港MS5]广东BGP入口 流媒体支持", server: fs-hk.iqyun.zone, port: 22222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港1]环球电讯 原生IP 流媒体支持", server: hk-zone.checkmails.xyz, port: 26666, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港2]环球电讯 福建BGP 流媒体支持", server: xm-bgp.iqyun.zone, port: 29225, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港2-B]环球电讯 海南BGP 流媒体支持", server: hn-hk.iqyun.zone, port: 22222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港3]NTT香港 广港BGP入口 流媒", server: hk-zone.checkmails.xyz, port: 27127, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港4]NTT香港 上海移动 推荐  流媒", server: hk-dm.uuuglass.co, port: 5269, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港5]HKT 福建BGP入口 流媒体支持", server: xm-bgp.iqyun.zone, port: 22225, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港6]HKT 广港VNC入口2 流媒体支持", server: hk-az2.checkmails.xyz, port: 12222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港7]MS 三网CN2GIA入口 超大带宽低延迟节点", server: hk-ms4.checkmails.xyz, port: 6619, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港7-IPLC]福建BGP 超大带宽低延迟节点", server: xm-bgp.iqyun.zone, port: 19999, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港7-HN]海南BGP 超大带宽低延迟节点", server: hn-hk.iqyun.zone, port: 25252, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港7-2]MS 三网CN2GIA入口 SS 超大带宽低延迟节点", server: hk-ms4.checkmails.xyz, port: 6056, type: ss, cipher: aes-256-gcm, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, udp: true}
-  - {name: "🇭🇰 [香港7-BGP]福建BGP入口 SS", server: xm-bgp.iqyun.zone, port: 12225, type: ss, cipher: aes-256-gcm, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, udp: true}
-  - {name: "🇭🇰 [香港7-隧道]海南BGP入口 SS", server: hn-hk.iqyun.zone, port: 59999, type: ss, cipher: aes-256-gcm, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, udp: true}
-  - {name: "🇭🇰 [香港8]DM香港 广港隧道入口 Trojan 流媒", server: hk-zone.checkmails.xyz, port: 22277, type: trojan, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, sni: hk-dm.uuuglass.co, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港8-2]DM香港 BGP入口 Trojan 流媒", server: hk-dm.uuuglass.co, port: 443, type: trojan, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, sni: hk-dm.uuuglass.co, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港8-BGP]福建BGP入口 Trojan 流媒", server: xm-bgp.iqyun.zone, port: 25252, type: trojan, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, sni: hk-dm.uuuglass.co, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港9]DM香港 福建BGP SS 流媒", server: xm-bgp.iqyun.zone, port: 12525, type: ss, cipher: chacha20-ietf-poly1305, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, udp: true}
-  - {name: "🇭🇰 [香港10]DM香港 广港隧道入口 SS 流媒", server: hk-zone.checkmails.xyz, port: 22999, type: ss, cipher: chacha20-ietf-poly1305, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, udp: true}
-  - {name: "🇭🇰 [香港11]香港宽频 广港IPLC入口", server: hk-zone.checkmails.xyz, port: 25129, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港12]香港宽频 福建BGP入口", server: xm-bgp.iqyun.zone, port: 27777, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [香港12-B]香港宽频 海南BGP入口", server: hn-hk.iqyun.zone, port: 22225, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [日本1]东京Nico 沪日IPLC入口 流媒体支持", server: hk-zone.checkmails.xyz, port: 26522, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [日本2]东京Nico BGP入口 流媒体支持", server: jp-dm.uuuglass.co, port: 52566, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [日本3]东京Nico 电联接入点 联通电信推荐 流媒体支持", server: jp-az.uuuglass.co, port: 12225, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [日本4]东京Cat CN2入口 流媒体支持", server: jp-az.uuuglass.co, port: 22222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [日本5]东京Cat 电联接入点 联通推荐 流媒体支持", server: sh-jp.iqyun.zone, port: 12345, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [日本6]东京Cat 沪日隧道入口 流媒", server: sh-jp.iqyun.zone, port: 22222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [日本7]东京NTT 沪日CN2入口 流媒体支持", server: jp-az.uuuglass.co, port: 29999, type: trojan, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, sni: jp-ln.uuuglass.co, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [日本8]东京NTT 沪日CMI入口 流媒体支持", server: sh-jp.iqyun.zone, port: 29999, type: trojan, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, sni: jp-ln.uuuglass.co, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [日本9]BGP入口 流媒体支持", server: jp-ln.uuuglass.co, port: 443, type: trojan, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, sni: jp-ln.uuuglass.co, skip-cert-verify: false, udp: true}
-  - {name: "🇰🇷 [韩国1]首尔KT JPCN2入口 NF", server: jp-az.uuuglass.co, port: 25222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇰🇷 [韩国2]首尔KT BGP入口 NF", server: jp-dm.uuuglass.co, port: 29292, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇰🇷 [韩国3]首尔KT 推荐 BGP入口 NF", server: kr-aws.uuuglass.co, port: 25229, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [澳门1]澳门电讯 珠港澳专线海缆入口 流媒体支持", server: hk-zone.checkmails.xyz, port: 25656, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇲🇴 [澳门2]澳门电讯 海南BGP入口 流媒体支持", server: hn-hk.iqyun.zone, port: 52222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇨🇳 [台湾1]新北中华电信 长沙BGP入口 流媒体支持", server: hn-bgp.iqyun.zone, port: 52125, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇨🇳 [台湾2]新北中华电信 HT入口 流媒体支持", server: hk-az2.checkmails.xyz, port: 25122, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇨🇳 [台湾3]新北中华电信 广东IPC入口 流媒体支持", server: dg-bgp.iqyun.zone, port: 29999, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇨🇳 [台湾4]台北Hinet 福建BGP入口 流媒体支持", server: xm-bgp.iqyun.zone, port: 25222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [台湾5]台北Hinet 港台VNC入口 流媒体支持", server: hk-azb1.uuuglass.co, port: 22666, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇸🇬 [新加坡1]广新IPLC隐私专线入口 NF", server: hk-az2.checkmails.xyz, port: 22999, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇸🇬 [新加坡2]福建BGP  隐私专线入口2 NF", server: xm-bgp.iqyun.zone, port: 57777, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇸🇬 [新加坡3]沪新IPLC  隐私专线入口 NF", server: hk-az2.checkmails.xyz, port: 52222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇸🇬 [新加坡4]福建BGP  隐私专线入口 NF", server: xm-bgp.iqyun.zone, port: 52121, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇸🇬 [新加坡5]IPC  隐私专线入口 NF", server: hk-zone.checkmails.xyz, port: 19222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇲🇾 [马来1]中马国际专线 NF", server: hk-azb1.uuuglass.co, port: 25125, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇲🇾 [马来2]深圳NCP海缆大马专线 NF", server: xm-bgp.iqyun.zone, port: 12252, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [澳洲1]悉尼 日澳CN2入口 流媒体支持", server: jp-az.uuuglass.co, port: 25565, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [澳洲2]悉尼 港澳CUVIP入口 流媒体支持", server: hk-azb1.uuuglass.co, port: 22225, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇦🇪 [阿联酋1]迪拜节点 长沙BGP入口 流媒体支持", server: cscu.01.211129.xyz, port: 22225, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [阿联酋2]迪拜节点 广港国际入口 流媒体支持", server: hk-az2.checkmails.xyz, port: 25666, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 [美国1]ATT BGP入口 流媒体支持", server: us-km.uuuglass.co, port: 25252, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [美国2]ATT 沪日美CN2入口 流媒体支持", server: jp-az.uuuglass.co, port: 29222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 [美国3]ATT 福建BGP入口 流媒体支持", server: xm-bgp.iqyun.zone, port: 29229, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [美国4]旧金山 日美NCP海缆专线 流媒体支持", server: jp-az.uuuglass.co, port: 22229, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 [美国5]旧金山 BGP入口 流媒体支持", server: us-do.uuuglass.co, port: 29999, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 [美国6]Multa 沪美CN2GIA入口 流媒体支持", server: jp-az.uuuglass.co, port: 59999, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 [美国7]Multa 厦门BGP入口 流媒体支持", server: xm-bgp.iqyun.zone, port: 52525, type: ss, cipher: chacha20-ietf-poly1305, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, udp: true}
-  - {name: "🇯🇵 [美国8]LN 沪日美入口 流媒体支持", server: jp-az.uuuglass.co, port: 25292, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇺🇸 [美国9]LN 福建BGP入口 流媒体支持", server: xm-bgp.iqyun.zone, port: 12259, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [俄罗斯1]日俄入口 SS 流媒体支持", server: jp-cat.uuuglass.co, port: 3389, type: ss, cipher: aes-128-gcm, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, udp: true}
-  - {name: "🇷🇺 [俄罗斯2]电信CN2GT入口 低延迟线路 SS 流媒体支持", server: ru-cn2.uuuglass.co, port: 25565, type: ss, cipher: aes-128-gcm, password: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, udp: true}
-  - {name: "🇨🇦 [加拿大1]iCloud多伦多 沪加入口 流媒体支持", server: hk-az2.checkmails.xyz, port: 62222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇯🇵 [加拿大2]iCloud多伦多 日加入口 流媒体支持", server: jp-dm.uuuglass.co, port: 29252, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇳🇱 [荷兰VIP-1]10G 福建BGP入口 流媒体支持", server: hk-az2.checkmails.xyz, port: 65222, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇳🇱 [荷兰VIP-2]10G 下载节点 BGP入口 流媒体支持", server: xm-bgp.iqyun.zone, port: 10166, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇬🇧 [英国1]伦敦Sky 上海联通入口 流媒体支持", server: hk-az2.checkmails.xyz, port: 52521, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇬🇧 [英国2]伦敦Sky 海南BGP入口 流媒体支持", server: hn-hk.iqyun.zone, port: 12345, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇩🇪 [德国-希腊1]上海联通入口 流媒体支持", server: hn-hk.iqyun.zone, port: 19999, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇩🇪 [德国2]汉堡 NCP海缆入口 流媒体支持", server: xm-bgp.iqyun.zone, port: 27272, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [德国3]法兰克福 港德入口 流媒体支持", server: hk-azb1.uuuglass.co, port: 16666, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [土耳其1]香港BGP入口 流媒体支持", server: hk-az2.checkmails.xyz, port: 29999, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇮🇳 [印度1]孟买tata 福建BGP入口 流媒体支持", server: xm-bgp.iqyun.zone, port: 25666, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
-  - {name: "🇭🇰 [印度2]孟买tata 港印BGP入口 流媒体支持", server: hk-azb1.uuuglass.co, port: 22777, type: vmess, uuid: 3b88722f-6b00-4aeb-be56-48bf0f36f8ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
+  # Shadowsocks
+  # The supported ciphers (encryption methods):
+  #   aes-128-gcm aes-192-gcm aes-256-gcm
+  #   aes-128-cfb aes-192-cfb aes-256-cfb
+  #   aes-128-ctr aes-192-ctr aes-256-ctr
+  #   rc4-md5 chacha20-ietf xchacha20
+  #   chacha20-ietf-poly1305 xchacha20-ietf-poly1305
+  - name: "ss1"
+    type: ss
+    server: ss.server.com
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: "password"
+    # udp: true
+
+  - name: "ss2"
+    type: ss
+    server: ss2.server.cn
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: "password"
+    plugin: obfs
+    plugin-opts:
+      mode: tls # or http
+      # host: bing.com
+
+  - name: "ss3"
+    type: ss
+    server: ss3.server.hk
+    port: 443
+    cipher: chacha20-ietf-poly1305
+    password: "password"
+    plugin: v2ray-plugin
+    plugin-opts:
+      mode: websocket # no QUIC now
+      # tls: true # wss
+      # skip-cert-verify: true
+      # host: bing.com
+      # path: "/"
+      # mux: true
+      # headers:
+      #   custom: value

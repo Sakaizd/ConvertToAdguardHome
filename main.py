@@ -50,9 +50,6 @@ def main(args):
             elif args.clashRule:
                 serverList.writelines(
                     " - DOMAIN-SUFFIX," + new_list[i] + ",DIRECT" + "\n")
-            elif args.yaml:
-                serverList.writelines(
-                    " - " + new_list[i]  + "\n")
             else:
                 serverList.writelines("[/" + new_list[i] + "/]"+DNS+"\n")
 
@@ -68,8 +65,6 @@ if __name__ == '__main__':
                         help="specify DNS server, default='https://dns.cloudflare.com/dns-query'"
                         )
     parser.add_argument("--list", help="server list only",
-                        action="store_true")
-    parser.add_argument("--yaml", help="server list to yaml list",
                         action="store_true")
     parser.add_argument("--clashRule", help="convert to clash rule",
                         action="store_true")
