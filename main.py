@@ -3,6 +3,7 @@
 import yaml
 from tld import get_tld, get_fld
 import re
+import os
 import argparse
 
 
@@ -19,7 +20,12 @@ def main(args):
 
     inputFile = args.inputFile
     outputFile = args.outputFile
-    DNS = args.DNS
+    server = args.server
+
+    isExists = os.path.exists("output")
+    if not isExists:
+        os.mkdir("output")
+
     with open(inputFile, encoding='utf-8') as f:
 
         data = yaml.load(f, Loader=yaml.FullLoader)
@@ -27,7 +33,7 @@ def main(args):
 
         # print(list(data.items())[0][1])
         servers = []
-        serverList = open(outputFile, "w")
+        serverList = open("output/"+outputFile, "w")
 
         for i in range(0, len(list(data.items())[0][1])):
             for item in data.items():
@@ -47,31 +53,32 @@ def main(args):
         for i in range(0, len(new_list)):
             if args.list:
                 serverList.writelines(new_list[i]+"\n")
-            elif args.yaml:
-                serverList.writelines(
-                    " - " + new_list[i] + "\n")
-            elif args.clashRule:
+            elif args.clash:
                 serverList.writelines(
                     " - DOMAIN-SUFFIX," + new_list[i] + ",DIRECT" + "\n")
+            elif args.mosdns:
+                serverList.writelines(
+                    "domain:" + new_list[i] + "\n")
+
             else:
                 serverList.writelines("[/" + new_list[i] + "/]"+DNS+"\n")
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
-        description='将 clash proxy provider 的域名转换为用于 AdGuardHome 指定为特定域名的上游服务器列表')
+        description='提取 clash proxy provider 的服务器域名，转换为用于 AdGuardHome 指定为特定域名的上游服务器列表等')
     parser.add_argument('-i', '--inputFile', type=str)
     parser.add_argument('-o', '--outputFile', type=str,
                         default='serverlist.txt', help="default='serverlist.txt'")
-    parser.add_argument('-d', '--DNS', type=str,
+    parser.add_argument('-s', '--server', type=str,
                         default='https://dns.cloudflare.com/dns-query',
                         help="specify DNS server, default='https://dns.cloudflare.com/dns-query'"
                         )
     parser.add_argument("--list", help="server list only",
                         action="store_true")
-    parser.add_argument("--yaml", help="server list to yaml list",
+    parser.add_argument("--clash", help="convert to clash rule",
                         action="store_true")
-    parser.add_argument("--clashRule", help="convert to clash rule",
+    parser.add_argument("--mosdns", help="convert to mosdns rule",
                         action="store_true")
     parser.add_argument("--verbose", help="verbose",
                         action="store_true")
