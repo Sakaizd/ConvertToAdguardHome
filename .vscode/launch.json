@@ -1,0 +1,53 @@
+{
+  // 使用 IntelliSense 了解相关属性。 
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: clash",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "-i",
+        "./clash.yaml",
+        "-o",
+        "./clashrule.txt",
+        "--clash"
+      ]
+    },
+    {
+      "name": "Python: mosdns",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "-i",
+        "./clash.yaml",
+        "-o",
+        "./mosdns.txt",
+        "--mosdns"
+      ]
+    },
+    {
+      "name": "Python: list",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true,
+      "args": [
+        "-i",
+        "./clash.yaml",
+        "-o",
+        "./list.txt",
+        "--list"
+      ]
+    }
+  ]
+}
