@@ -13,9 +13,9 @@
       "justMyCode": true,
       "args": [
         "-i",
-        "./clash.yaml",
+        "clash.yaml",
         "-o",
-        "./clashrule.txt",
+        "clashrule.txt",
         "--clash"
       ]
     },
@@ -30,7 +30,7 @@
         "-i",
         "./clash.yaml",
         "-o",
-        "./mosdns.txt",
+        "mosdns.txt",
         "--mosdns"
       ]
     },
@@ -43,9 +43,9 @@
       "justMyCode": true,
       "args": [
         "-i",
-        "./clash.yaml",
+        "clash.yaml",
         "-o",
-        "./list.txt",
+        "list.txt",
         "--list"
       ]
     }
